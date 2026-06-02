@@ -55,7 +55,7 @@ The objective was to evaluate propulsion system performance under extreme therma
 
 ---
 
-## 1. Initial Blade Geometry
+## 1. Nozzle geometry / propulsion geometry
 
 <p align="center">
 <img src="Image/1.png" width="450"/>
@@ -67,7 +67,7 @@ The objective was to evaluate propulsion system performance under extreme therma
 
 ---
 
-## 2. Mesh Generation Study
+## 2. Mesh
 
 <p align="center">
 <img src="Image/2.png" width="450"/>
@@ -79,7 +79,7 @@ The objective was to evaluate propulsion system performance under extreme therma
 
 ---
 
-## 3. Comparative Engineering Results
+## 3. Velocity Countors
 
 <p align="center">
 <img src="Image/3.png" width="650"/>
