@@ -1,2 +1,1 @@
-# High-Enthalpy-Hydrogen-Propulsion-System
-CFD, thermal, and structural investigation of a high-enthalpy hydrogen propulsion system using ANSYS Fluent, ANSYS Mechanical, and MATLAB.
+Simulation-driven investigation of a high-enthalpy hydrogen propulsion system including CFD validation, thermal analysis, fatigue assessment, and analytical propulsion modelling.
