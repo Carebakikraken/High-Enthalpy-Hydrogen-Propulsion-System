@@ -277,7 +277,7 @@ Additional engineering calculations, fatigue investigations, mesh studies, and p
 ## Open Full Appendix Report
 
 <p align="center">
-<a href="./Appendix/Appendix.docx">
+<a href="./Appendix/Appendix.pdf">
 <img src="https://img.shields.io/badge/Open-Full_Appendix_Report-blue?style=for-the-badge">
 </a>
 </p>
