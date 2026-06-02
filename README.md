@@ -172,15 +172,15 @@ clc;
 clear;
 
 %% 1. Input Parameters
-Pc = 40e6;           % Chamber Pressure (Pa)
-Tc = 5000;           % Chamber Temperature (K)
-Pa = 101325;         % Ambient Pressure (Pa)
-R  = 4124;           % Gas Constant for H2 (J/kg*K)
-gamma = 1.3;         % Heat Capacity Ratio
-Rt = 0.1;            % Throat Radius (m)
-epsilon = 20.25;     % Expansion Ratio (Ae/At)
-total_mass = 140000; % Total Rocket Mass (kg)
-g = 9.81;            % Gravity (m/s^2)
+Pc = 40e6;           
+Tc = 5000;           
+Pa = 101325;         
+R  = 4124;           
+gamma = 1.3;         
+Rt = 0.1;            
+epsilon = 20.25;     
+total_mass = 140000; 
+g = 9.81;            
 
 %% 2. Geometric Calculations
 At = pi * Rt^2;
@@ -247,9 +247,6 @@ fprintf('Mission Status: %s\n', status);
 | Chamber Pressure | 40 MPa | 10–25 MPa | 3–10 MPa |
 | Exit Velocity | ~11,400 m/s | 3,000–4,500 m/s | 8,000–9,000 m/s |
 | Specific Impulse | ~1100s | 300–450s | 800–900s |
-| CFD Validation | ✅ | ❌ | ❌ |
-| Structural Testing | ✅ | ❌ | ❌ |
-
 ---
 
 # Results & Findings
@@ -287,6 +284,8 @@ Potential future developments include:
 
 ```bash
 ├── Appendix
+│   ├── Appendix.docx
+│   └── README.md
 ├── CFD-Results
 ├── Fatigue-Analysis
 ├── Image
@@ -295,18 +294,27 @@ Potential future developments include:
 └── README.md
 ```
 
-Because apparently humans enjoy organising folders almost as much as they enjoy overheating aerospace hardware to several thousand Kelvin and calling it innovation.
-
 ---
 
 # Appendix
 
 Additional engineering calculations, fatigue investigations, mesh studies, and propulsion validation data are included within the appendix documentation.
 
-📄 Appendix File:  
-`Appendix/Individual Project Appendix 1.docx`
+## Open Full Appendix Report
 
-Source document uploaded in conversation: :contentReference[oaicite:0]{index=0}
+<p align="center">
+<a href="./Appendix/Appendix.docx">
+<img src="https://img.shields.io/badge/Open-Full_Appendix_Report-blue?style=for-the-badge">
+</a>
+</p>
+
+You can also directly open the appendix file from the repository folder:
+
+```bash
+Appendix/Appendix.docx
+```
+
+Because naturally the final boss of every aerospace project is not combustion instability or thermal creep. It's GitHub folder structure management. Tiny rectangles deciding the fate of engineering portfolios since forever.
 
 ---
 
