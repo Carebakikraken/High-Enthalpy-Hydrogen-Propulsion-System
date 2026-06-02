@@ -222,3 +222,84 @@ fprintf('Exit Mach Number: %.3f\n', Me);
 fprintf('Exit Velocity: %.2f m/s\n', Ve);
 fprintf('Total Thrust: %.2f MN\n', Total_Thrust/1e6);
 fprintf('TWR: %.2f\n', TWR);
+
+
+---
+
+# Engineering Comparison Study
+
+| Category | Final Model | Chemical Rocket | Nuclear Thermal Rocket |
+|---|---|---|---|
+| Propellant | Hydrogen (H₂) | RP-1 / LH2 + LOX | U235 |
+| Chamber Temperature | 5000 K | 3000–3500 K | 2500–3000 K |
+| Chamber Pressure | 40 MPa | 10–25 MPa | 3–10 MPa |
+| Exit Velocity | ~11,400 m/s | 3,000–4,500 m/s | 8,000–9,000 m/s |
+| Specific Impulse | ~1100s | 300–450s | 800–900s |
+| CFD Validation | ✅ | ❌ | ❌ |
+| Structural Testing | ✅ | ❌ | ❌ |
+
+---
+
+# Results & Findings
+
+The investigation demonstrated the effectiveness of simulation-driven propulsion engineering workflows for evaluating high-temperature hydrogen propulsion systems.
+
+## Key Findings
+
+- successful CFD validation of high-speed compressible hydrogen flow
+- strong thermal resistance under extreme operating temperatures
+- acceptable structural deformation behaviour
+- fatigue lifecycle validation completed
+- mesh independence successfully verified
+- analytical MATLAB calculations aligned with CFD trends
+- high specific impulse potential demonstrated
+
+The combined CFD, structural, thermal, and analytical workflow provides a strong engineering foundation for future propulsion system optimisation studies.
+
+---
+
+# Future Improvements
+
+Potential future developments include:
+
+- plasma-assisted propulsion modelling
+- regenerative cooling optimisation
+- transient combustion simulation
+- AI-assisted nozzle optimisation
+- coupled thermo-structural analysis
+- real gas hydrogen modelling
+
+
+---
+
+# Appendix
+
+Additional engineering calculations, fatigue investigations, mesh studies, and propulsion validation data are included within the appendix documentation.
+
+## Open Full Appendix Report
+
+<p align="center">
+<a href="./Appendix/Appendix.docx">
+<img src="https://img.shields.io/badge/Open-Full_Appendix_Report-blue?style=for-the-badge">
+</a>
+</p>
+
+The appendix contains:
+
+- complete CFD outputs
+- fatigue investigation studies
+- thermal contour investigations
+- mesh independence studies
+- propulsion performance calculations
+- MATLAB analytical modelling
+- additional engineering validation data
+
+---
+
+# Author
+
+Varun Saini  
+Aerospace Engineering Graduate  
+Preston, United Kingdom
+
+---
