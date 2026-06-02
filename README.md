@@ -291,9 +291,6 @@ The appendix contains:
 - MATLAB analytical modelling
 - additional engineering validation data
 
-Because apparently aerospace engineering is just:
-> “generate terrifying temperatures, solve differential equations, and produce 47 contour plots until morale improves.”
-
 ---
 
 # Author
