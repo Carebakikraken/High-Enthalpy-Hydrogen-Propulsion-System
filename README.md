@@ -222,7 +222,7 @@ fprintf('Exit Mach Number: %.3f\n', Me);
 fprintf('Exit Velocity: %.2f m/s\n', Ve);
 fprintf('Total Thrust: %.2f MN\n', Total_Thrust/1e6);
 fprintf('TWR: %.2f\n', TWR);
-
+```
 
 ---
 
@@ -235,8 +235,6 @@ fprintf('TWR: %.2f\n', TWR);
 | Chamber Pressure | 40 MPa | 10–25 MPa | 3–10 MPa |
 | Exit Velocity | ~11,400 m/s | 3,000–4,500 m/s | 8,000–9,000 m/s |
 | Specific Impulse | ~1100s | 300–450s | 800–900s |
-| CFD Validation | ✅ | ❌ | ❌ |
-| Structural Testing | ✅ | ❌ | ❌ |
 
 ---
 
