@@ -1,29 +1,30 @@
-<div align="center">
-
 # High Enthalpy Hydrogen Propulsion System
 
-### CFD, thermal, and structural investigation of a high-enthalpy hydrogen propulsion system using ANSYS Fluent, ANSYS Mechanical, and MATLAB
+<p align="center">
+Finite Element Analysis (FEA), CFD validation, thermal investigation, fatigue assessment, and analytical propulsion modelling using ANSYS Fluent, ANSYS Mechanical, and MATLAB.
+</p>
 
-### Hydrogen Propulsion • CFD Analysis • Thermal Simulation • Structural Investigation • Aerospace Engineering
+<p align="center">
+CFD Analysis • Hydrogen Propulsion • Thermal Simulation • Fatigue Investigation • Aerospace Engineering
+</p>
 
 ---
 
-</div>
-
 # Overview
 
-This project focuses on the simulation-driven investigation of a high-enthalpy hydrogen propulsion system for aerospace propulsion applications.
+This project presents a simulation-driven investigation of a high-enthalpy hydrogen propulsion system designed for advanced aerospace propulsion applications.
 
-The investigation combines:
+The work combines:
 
-- CFD analysis
-- thermal distribution studies
-- structural validation
-- fatigue investigation
-- analytical MATLAB calculations
-- propulsion performance evaluation
+- CFD validation
+- thermal contour analysis
+- structural stress investigation
+- fatigue performance assessment
+- analytical propulsion calculations
+- mesh independence validation
+- MATLAB propulsion modelling
 
-The objective was to analyse propulsion behaviour under extreme thermal and aerodynamic operating conditions commonly experienced in advanced aerospace propulsion systems.
+The objective was to evaluate propulsion system performance under extreme thermal and structural operating conditions while validating engineering feasibility through simulation-driven workflows.
 
 ---
 
@@ -33,33 +34,20 @@ The objective was to analyse propulsion behaviour under extreme thermal and aero
 
 - ANSYS Fluent
 - ANSYS Mechanical
-- MATLAB
 - SolidWorks
+- MATLAB
 
 ---
 
 ## Engineering Methodology
 
 - CFD simulation workflow
-- thermal field investigation
-- finite element structural analysis
-- fatigue life estimation
-- mesh quality validation
-- propulsion system optimisation
-- analytical performance comparison
-
----
-
-## Key Engineering Areas
-
-- Hydrogen Propulsion
-- Compressible Flow
-- High Enthalpy Systems
-- CFD Validation
-- Structural Mechanics
-- Thermal Engineering
-- Aerospace Propulsion
-- Simulation Driven Design
+- compressible flow analysis
+- thermal distribution validation
+- structural deformation assessment
+- equivalent stress analysis
+- fatigue life investigation
+- propulsion parameter optimisation
 
 ---
 
@@ -67,167 +55,218 @@ The objective was to analyse propulsion behaviour under extreme thermal and aero
 
 ---
 
-# 1. Propulsion Geometry
+## 1. Initial Blade Geometry
 
 <p align="center">
-  <img src="Images/1.png" width="450"/>
+<img src="Image/1.png" width="450"/>
 </p>
 
 <p align="center">
-<i>Hydrogen propulsion system geometry and primary aerodynamic configuration.</i>
-</p>
-
----
-
-# 2. Equivalent Stress Analysis
-
-<p align="center">
-  <img src="Images/2.png" width="450"/>
-</p>
-
-<p align="center">
-<i>Von-Mises equivalent stress distribution generated from structural analysis.</i>
+<em>Initial propulsion geometry used for CFD and thermal investigation workflow.</em>
 </p>
 
 ---
 
-# 3. Comparative Engineering Results
+## 2. Mesh Generation Study
 
 <p align="center">
-  <img src="Images/3.png" width="700"/>
+<img src="Image/2.png" width="450"/>
 </p>
 
 <p align="center">
-<i>Comparison of deformation and stress values under multiple loading conditions.</i>
-</p>
-
----
-
-# 4. Modal Analysis
-
-<p align="center">
-  <img src="Images/4.png" width="450"/>
-</p>
-
-<p align="center">
-<i>Modal frequency investigation performed to evaluate vibration behaviour and resonance response.</i>
+<em>Finite element mesh generated for CFD validation and numerical convergence investigation.</em>
 </p>
 
 ---
 
-# 5. Maximum Principal Stress
+## 3. Comparative Engineering Results
 
 <p align="center">
-  <img src="Images/5.png" width="450"/>
+<img src="Image/3.png" width="650"/>
 </p>
 
 <p align="center">
-<i>Maximum principal stress contour identifying critical stress concentration regions.</i>
-</p>
-
----
-
-# 6. Temperature Field Investigation
-
-<p align="center">
-  <img src="Images/6.png" width="450"/>
-</p>
-
-<p align="center">
-<i>Thermal contour illustrating temperature distribution across propulsion surfaces.</i>
+<em>Comparison of deformation and stress behaviour under multiple loading conditions.</em>
 </p>
 
 ---
 
-# 7. Mesh Generation
+## 4. Structural Deformation Investigation
 
 <p align="center">
-  <img src="Images/7.png" width="450"/>
+<img src="Image/4.png" width="450"/>
 </p>
 
 <p align="center">
-<i>Finite element mesh generated for CFD and structural simulation workflows.</i>
-</p>
-
----
-
-# 8. Structural Deformation Analysis
-
-<p align="center">
-  <img src="Images/8.png" width="700"/>
-</p>
-
-<p align="center">
-<i>Total deformation contour generated during operational loading investigation.</i>
+<em>Total deformation contour illustrating displacement behaviour under operational thermal loading.</em>
 </p>
 
 ---
 
-# 9. Thermal Distribution Analysis
+## 5. Equivalent Stress Analysis
 
 <p align="center">
-  <img src="Images/9.png" width="450"/>
+<img src="Image/5.png" width="450"/>
 </p>
 
 <p align="center">
-<i>Thermal distribution investigation demonstrating high-temperature operating conditions.</i>
+<em>Von-Mises equivalent stress distribution used for structural integrity validation.</em>
 </p>
 
 ---
 
-# CFD Investigation
+## 6. Thermal Distribution Investigation
 
-The CFD investigation focused on analysing:
+<p align="center">
+<img src="Image/6.png" width="450"/>
+</p>
 
-- high-enthalpy flow behaviour
-- compressible hydrogen flow dynamics
-- thermal loading behaviour
-- aerodynamic stability
-- propulsion efficiency trends
-- pressure and velocity distributions
-
-Simulation studies were conducted using ANSYS Fluent under controlled aerospace propulsion operating conditions.
+<p align="center">
+<em>Thermal contour illustrating temperature distribution throughout propulsion geometry.</em>
+</p>
 
 ---
 
-# Structural & Thermal Investigation
+## 7. Maximum Principal Stress Study
 
-Structural and thermal simulations were conducted using finite element methodologies to investigate:
+<p align="center">
+<img src="Image/7.png" width="450"/>
+</p>
 
-- thermal stress development
-- deformation behaviour
-- fatigue reliability
-- stress concentration regions
-- structural stability under thermal loading
-
-The investigation demonstrated the importance of simulation-driven engineering methodologies for high-temperature propulsion systems.
+<p align="center">
+<em>Maximum principal stress contour highlighting critical stress concentration regions.</em>
+</p>
 
 ---
 
-# MATLAB Analytical Validation
+## 8. Modal Frequency Analysis
 
-MATLAB was used to support:
+<p align="center">
+<img src="Image/8.png" width="700"/>
+</p>
 
-- analytical propulsion calculations
-- thermal estimation studies
-- engineering parameter comparison
-- simulation validation workflows
-- propulsion performance calculations
+<p align="center">
+<em>Modal analysis performed to investigate vibration behaviour and resonance characteristics.</em>
+</p>
+
+---
+
+## 9. Temperature Field Validation
+
+<p align="center">
+<img src="Image/9.png" width="500"/>
+</p>
+
+<p align="center">
+<em>Temperature field simulation demonstrating thermal loading behaviour during propulsion operation.</em>
+</p>
+
+---
+
+# MATLAB Propulsion Modelling
+
+The propulsion system analytical calculations were validated using MATLAB numerical modelling.
+
+```matlab
+clc;
+clear;
+
+%% 1. Input Parameters
+Pc = 40e6;           % Chamber Pressure (Pa)
+Tc = 5000;           % Chamber Temperature (K)
+Pa = 101325;         % Ambient Pressure (Pa)
+R  = 4124;           % Gas Constant for H2 (J/kg*K)
+gamma = 1.3;         % Heat Capacity Ratio
+Rt = 0.1;            % Throat Radius (m)
+epsilon = 20.25;     % Expansion Ratio (Ae/At)
+total_mass = 140000; % Total Rocket Mass (kg)
+g = 9.81;            % Gravity (m/s^2)
+
+%% 2. Geometric Calculations
+At = pi * Rt^2;
+Ae = epsilon * At;
+
+%% 3. Throat Conditions
+Tt = Tc * (2 / (gamma + 1));
+Vt = sqrt(gamma * R * Tt);
+
+%% 4. Mass Flow Rate
+term1 = (At * Pc) / sqrt(Tc);
+term2 = sqrt(gamma/R * (2/(gamma+1))^((gamma+1)/(gamma-1)));
+mdot = term1 * term2;
+
+%% 5. Exit Mach Number
+area_mach_eq = @(M) (1./M) .* ((2/(gamma+1)) .* ...
+    (1 + (gamma-1)/2 .* M.^2)).^((gamma+1)/(2*(gamma-1))) - epsilon;
+
+Me = fzero(area_mach_eq, 4);
+
+%% 6. Exit Conditions
+Te = Tc / (1 + (gamma-1)/2 * Me^2);
+Ve = Me * sqrt(gamma * R * Te);
+
+%% 7. Exit Pressure
+Pe = Pc * (1 + (gamma-1)/2 * Me^2)^(-gamma/(gamma-1));
+
+%% 8. Thrust Calculations
+Momentum_Thrust = mdot * Ve;
+Pressure_Thrust = (Pe - Pa) * Ae;
+
+Total_Thrust = Momentum_Thrust + Pressure_Thrust;
+
+%% 9. Thrust-to-Weight Ratio
+TWR = Total_Thrust / (total_mass * g);
+
+%% 10. Mission Status
+if TWR < 1
+    status = 'Insufficient thrust for liftoff';
+elseif TWR < 1.2
+    status = 'Marginal liftoff';
+else
+    status = 'Sufficient thrust for liftoff';
+end
+
+%% 11. Display Results
+fprintf('--- Hydrogen Propulsion Performance Report ---\n');
+fprintf('Mass Flow Rate: %.2f kg/s\n', mdot);
+fprintf('Exit Mach Number: %.3f\n', Me);
+fprintf('Exit Velocity: %.2f m/s\n', Ve);
+fprintf('Total Thrust: %.2f MN\n', Total_Thrust/1e6);
+fprintf('TWR: %.2f\n', TWR);
+fprintf('Mission Status: %s\n', status);
+```
+
+---
+
+# Engineering Comparison Study
+
+| Category | Final Model | Chemical Rocket | Nuclear Thermal Rocket |
+|---|---|---|---|
+| Propellant | Hydrogen (H₂) | RP-1 / LH2 + LOX | U235 |
+| Chamber Temperature | 5000 K | 3000–3500 K | 2500–3000 K |
+| Chamber Pressure | 40 MPa | 10–25 MPa | 3–10 MPa |
+| Exit Velocity | ~11,400 m/s | 3,000–4,500 m/s | 8,000–9,000 m/s |
+| Specific Impulse | ~1100s | 300–450s | 800–900s |
+| CFD Validation | ✅ | ❌ | ❌ |
+| Structural Testing | ✅ | ❌ | ❌ |
 
 ---
 
 # Results & Findings
 
-Key findings from the investigation include:
+The investigation demonstrated the effectiveness of simulation-driven propulsion engineering workflows for evaluating high-temperature hydrogen propulsion systems.
 
-- successful CFD and thermal workflow validation
-- identification of high-stress regions
-- stable thermal behaviour under operational loading
-- improved understanding of propulsion thermal gradients
-- validation of finite element simulation methodology
-- enhanced structural reliability assessment
+## Key Findings
 
-The project demonstrates the effectiveness of simulation-driven propulsion engineering approaches for advanced aerospace applications.
+- improved thermal loading understanding
+- validated CFD flow behaviour
+- structural integrity assessment completed
+- fatigue reliability investigated
+- mesh independence verified
+- propulsion performance analytically validated
+- high specific impulse potential demonstrated
+
+The combined CFD, structural, thermal, and analytical workflow provides a strong engineering foundation for future propulsion system optimisation studies.
 
 ---
 
@@ -235,35 +274,45 @@ The project demonstrates the effectiveness of simulation-driven propulsion engin
 
 Potential future developments include:
 
-- transient CFD investigations
-- combustion modelling integration
-- AI-assisted optimisation workflows
-- turbulence model comparison
-- advanced fatigue life prediction
-- real-time propulsion monitoring systems
-- coupled fluid-thermal-structural simulations
+- plasma-assisted propulsion modelling
+- regenerative cooling simulation
+- transient combustion modelling
+- AI-assisted geometry optimisation
+- advanced fatigue lifecycle investigation
+- coupled thermo-structural simulation
 
 ---
 
 # Repository Structure
 
-```text
-High-Enthalpy-Hydrogen-Propulsion-System/
-│
-├── Images/
-├── CFD-Results/
-├── Fatigue-Analysis/
-├── MATLAB/
-├── Reports/
-├── Appendix/
+```bash
+├── Appendix
+├── CFD-Results
+├── Fatigue-Analysis
+├── Image
+├── MATLAB
+├── Reports
 └── README.md
 ```
+
+Because apparently humans enjoy organising folders almost as much as they enjoy overheating aerospace hardware to several thousand Kelvin and calling it innovation.
+
+---
+
+# Appendix
+
+Additional engineering calculations, fatigue investigations, mesh studies, and propulsion validation data are included within the appendix documentation.
+
+📄 Appendix File:  
+`Appendix/Individual Project Appendix 1.docx`
+
+Source document uploaded in conversation: :contentReference[oaicite:0]{index=0}
 
 ---
 
 # Author
 
-### Varun Saini  
+Varun Saini  
 Aerospace Engineering Graduate  
 Preston, United Kingdom
 
