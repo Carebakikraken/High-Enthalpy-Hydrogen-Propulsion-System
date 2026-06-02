@@ -280,22 +280,6 @@ Potential future developments include:
 
 ---
 
-# Repository Structure
-
-```bash
-├── Appendix
-│   ├── Appendix.docx
-│   └── README.md
-├── CFD-Results
-├── Fatigue-Analysis
-├── Image
-├── MATLAB
-├── Reports
-└── README.md
-```
-
----
-
 # Appendix
 
 Additional engineering calculations, fatigue investigations, mesh studies, and propulsion validation data are included within the appendix documentation.
