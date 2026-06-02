@@ -240,7 +240,7 @@ fprintf('Mission Status: %s\n', status);
 
 # Engineering Comparison Study
 
-| Category | Final Model | Chemical Rocket | Nuclear Thermal Rocket |
+| Category | Pourposed Model | Chemical Rocket | Nuclear Thermal Rocket |
 |---|---|---|---|
 | Propellant | Hydrogen (H₂) | RP-1 / LH2 + LOX | U235 |
 | Chamber Temperature | 5000 K | 3000–3500 K | 2500–3000 K |
