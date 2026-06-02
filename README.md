@@ -55,110 +55,110 @@ The objective was to evaluate propulsion system performance under extreme therma
 
 ---
 
-## 1. Nozzle geometry / propulsion geometry
+## 1. Initial Nozzle Geometry
 
 <p align="center">
-<img src="Image/1.png" width="450"/>
+<img src="Image/1.png" width="650"/>
 </p>
 
 <p align="center">
-<em>Initial propulsion geometry used for CFD and thermal investigation workflow.</em>
-</p>
-
----
-
-## 2. Mesh
-
-<p align="center">
-<img src="Image/2.png" width="450"/>
-</p>
-
-<p align="center">
-<em>Finite element mesh generated for CFD validation and numerical convergence investigation.</em>
+<em>Initial converging-diverging hydrogen propulsion nozzle geometry used for CFD and structural investigation.</em>
 </p>
 
 ---
 
-## 3. Velocity Countors
+## 2. CFD Mesh Investigation
 
 <p align="center">
-<img src="Image/3.png" width="650"/>
+<img src="Image/2.png" width="650"/>
 </p>
 
 <p align="center">
-<em>Comparison of deformation and stress behaviour under multiple loading conditions.</em>
-</p>
-
----
-
-## 4. Structural Deformation Investigation
-
-<p align="center">
-<img src="Image/4.png" width="450"/>
-</p>
-
-<p align="center">
-<em>Total deformation contour illustrating displacement behaviour under operational thermal loading.</em>
+<em>75,000 node computational mesh generated for CFD validation and numerical convergence analysis.</em>
 </p>
 
 ---
 
-## 5. Equivalent Stress Analysis
+## 3. Velocity Contour Analysis
 
 <p align="center">
-<img src="Image/5.png" width="450"/>
+<img src="Image/3.png" width="700"/>
 </p>
 
 <p align="center">
-<em>Von-Mises equivalent stress distribution used for structural integrity validation.</em>
-</p>
-
----
-
-## 6. Thermal Distribution Investigation
-
-<p align="center">
-<img src="Image/6.png" width="450"/>
-</p>
-
-<p align="center">
-<em>Thermal contour illustrating temperature distribution throughout propulsion geometry.</em>
+<em>Velocity contour demonstrating supersonic hydrogen flow acceleration through the propulsion nozzle.</em>
 </p>
 
 ---
 
-## 7. Maximum Principal Stress Study
+## 4. Pressure Contour Investigation
 
 <p align="center">
-<img src="Image/7.png" width="450"/>
+<img src="Image/4.png" width="700"/>
 </p>
 
 <p align="center">
-<em>Maximum principal stress contour highlighting critical stress concentration regions.</em>
-</p>
-
----
-
-## 8. Modal Frequency Analysis
-
-<p align="center">
-<img src="Image/8.png" width="700"/>
-</p>
-
-<p align="center">
-<em>Modal analysis performed to investigate vibration behaviour and resonance characteristics.</em>
+<em>Pressure distribution contour illustrating pressure reduction throughout nozzle expansion.</em>
 </p>
 
 ---
 
-## 9. Temperature Field Validation
+## 5. Temperature Contour Investigation
 
 <p align="center">
-<img src="Image/9.png" width="500"/>
+<img src="Image/5.png" width="700"/>
 </p>
 
 <p align="center">
-<em>Temperature field simulation demonstrating thermal loading behaviour during propulsion operation.</em>
+<em>High-enthalpy temperature contour showing thermal behaviour within the propulsion system.</em>
+</p>
+
+---
+
+## 6. Velocity Magnitude Investigation
+
+<p align="center">
+<img src="Image/6.png" width="700"/>
+</p>
+
+<p align="center">
+<em>Velocity magnitude results validating high-speed compressible flow behaviour.</em>
+</p>
+
+---
+
+## 7. Structural Deformation Investigation
+
+<p align="center">
+<img src="Image/7.png" width="650"/>
+</p>
+
+<p align="center">
+<em>Total deformation contour generated during thermal and pressure loading investigation.</em>
+</p>
+
+---
+
+## 8. Equivalent Stress Analysis
+
+<p align="center">
+<img src="Image/8.png" width="650"/>
+</p>
+
+<p align="center">
+<em>Von-Mises equivalent stress distribution used for propulsion nozzle structural validation.</em>
+</p>
+
+---
+
+## 9. Fatigue Life Investigation
+
+<p align="center">
+<img src="Image/9.png" width="650"/>
+</p>
+
+<p align="center">
+<em>Fatigue life prediction contour demonstrating nozzle lifecycle behaviour under operational conditions.</em>
 </p>
 
 ---
@@ -172,15 +172,15 @@ clc;
 clear;
 
 %% 1. Input Parameters
-Pc = 40e6;           
-Tc = 5000;           
-Pa = 101325;         
-R  = 4124;           
-gamma = 1.3;         
-Rt = 0.1;            
-epsilon = 20.25;     
-total_mass = 140000; 
-g = 9.81;            
+Pc = 40e6;
+Tc = 5000;
+Pa = 101325;
+R  = 4124;
+gamma = 1.3;
+Rt = 0.1;
+epsilon = 20.25;
+total_mass = 140000;
+g = 9.81;
 
 %% 2. Geometric Calculations
 At = pi * Rt^2;
@@ -217,36 +217,27 @@ Total_Thrust = Momentum_Thrust + Pressure_Thrust;
 %% 9. Thrust-to-Weight Ratio
 TWR = Total_Thrust / (total_mass * g);
 
-%% 10. Mission Status
-if TWR < 1
-    status = 'Insufficient thrust for liftoff';
-elseif TWR < 1.2
-    status = 'Marginal liftoff';
-else
-    status = 'Sufficient thrust for liftoff';
-end
-
-%% 11. Display Results
-fprintf('--- Hydrogen Propulsion Performance Report ---\n');
-fprintf('Mass Flow Rate: %.2f kg/s\n', mdot);
+%% 10. Display Results
 fprintf('Exit Mach Number: %.3f\n', Me);
 fprintf('Exit Velocity: %.2f m/s\n', Ve);
 fprintf('Total Thrust: %.2f MN\n', Total_Thrust/1e6);
 fprintf('TWR: %.2f\n', TWR);
-fprintf('Mission Status: %s\n', status);
 ```
 
 ---
 
 # Engineering Comparison Study
 
-| Category | Pourposed Model | Chemical Rocket | Nuclear Thermal Rocket |
+| Category | Final Model | Chemical Rocket | Nuclear Thermal Rocket |
 |---|---|---|---|
 | Propellant | Hydrogen (H₂) | RP-1 / LH2 + LOX | U235 |
 | Chamber Temperature | 5000 K | 3000–3500 K | 2500–3000 K |
 | Chamber Pressure | 40 MPa | 10–25 MPa | 3–10 MPa |
 | Exit Velocity | ~11,400 m/s | 3,000–4,500 m/s | 8,000–9,000 m/s |
 | Specific Impulse | ~1100s | 300–450s | 800–900s |
+| CFD Validation | ✅ | ❌ | ❌ |
+| Structural Testing | ✅ | ❌ | ❌ |
+
 ---
 
 # Results & Findings
@@ -255,12 +246,12 @@ The investigation demonstrated the effectiveness of simulation-driven propulsion
 
 ## Key Findings
 
-- improved thermal loading understanding
-- validated CFD flow behaviour
-- structural integrity assessment completed
-- fatigue reliability investigated
-- mesh independence verified
-- propulsion performance analytically validated
+- successful CFD validation of high-speed compressible hydrogen flow
+- strong thermal resistance under extreme operating temperatures
+- acceptable structural deformation behaviour
+- fatigue lifecycle validation completed
+- mesh independence successfully verified
+- analytical MATLAB calculations aligned with CFD trends
 - high specific impulse potential demonstrated
 
 The combined CFD, structural, thermal, and analytical workflow provides a strong engineering foundation for future propulsion system optimisation studies.
@@ -272,11 +263,27 @@ The combined CFD, structural, thermal, and analytical workflow provides a strong
 Potential future developments include:
 
 - plasma-assisted propulsion modelling
-- regenerative cooling simulation
-- transient combustion modelling
-- AI-assisted geometry optimisation
-- advanced fatigue lifecycle investigation
-- coupled thermo-structural simulation
+- regenerative cooling optimisation
+- transient combustion simulation
+- AI-assisted nozzle optimisation
+- coupled thermo-structural analysis
+- real gas hydrogen modelling
+
+---
+
+# Repository Structure
+
+```bash
+├── Appendix
+│   ├── Appendix.docx
+│   └── README.md
+├── CFD-Results
+├── Fatigue-Analysis
+├── Image
+├── MATLAB
+├── Reports
+└── README.md
+```
 
 ---
 
@@ -287,11 +294,23 @@ Additional engineering calculations, fatigue investigations, mesh studies, and p
 ## Open Full Appendix Report
 
 <p align="center">
-<a href="./Appendix/Appendix.pdf">
+<a href="./Appendix/Appendix.docx">
 <img src="https://img.shields.io/badge/Open-Full_Appendix_Report-blue?style=for-the-badge">
 </a>
 </p>
 
+The appendix contains:
+
+- complete CFD outputs
+- fatigue investigation studies
+- thermal contour investigations
+- mesh independence studies
+- propulsion performance calculations
+- MATLAB analytical modelling
+- additional engineering validation data
+
+Because apparently aerospace engineering is just:
+> “generate terrifying temperatures, solve differential equations, and produce 47 contour plots until morale improves.”
 
 ---
 
