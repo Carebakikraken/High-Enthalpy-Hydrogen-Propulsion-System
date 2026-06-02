@@ -291,15 +291,6 @@ Additional engineering calculations, fatigue investigations, mesh studies, and p
 <img src="https://img.shields.io/badge/Open-Full_Appendix_Report-blue?style=for-the-badge">
 </a>
 </p>
-
-You can also directly open the appendix file from the repository folder:
-
-```bash
-Appendix/Appendix.docx
-```
-
-Because naturally the final boss of every aerospace project is not combustion instability or thermal creep. It's GitHub folder structure management. Tiny rectangles deciding the fate of engineering portfolios since forever.
-
 ---
 
 # Author
